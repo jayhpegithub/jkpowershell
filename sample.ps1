@@ -10,6 +10,8 @@ function Show-Greeting {
         [string]$name
     )
     Write-Output "$greeting, $name!"
+    # Output the current PowerShell version
+    Write-Output $PSVersionTable.PSVersion
 }
 
 # Call the function
